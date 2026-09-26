@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Electrical Engineering Calculator - Calculate Ohm's Law, Power, Resistance, AC Power and Transformer values.">
+
+    <title>ElectroCalc | Electrical Engineering Calculator</title>
+
+    <!-- Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="grid-background"></div>
+
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="#" class="brand">
+
+                <div class="brand-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <div>
+                    <strong>Electro<span>Calc</span></strong>
+                    <small>ENGINEERING TOOLS</small>
+                </div>
+
+            </a>
+
+            <nav class="desktop-nav">
+
+                <a href="#calculators">Calculators</a>
+                <a href="#formulas">Formulas</a>
+                <a href="#about">About</a>
+
+            </nav>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="#calculators">Calculators</a>
+            <a href="#formulas">Formulas</a>
+            <a href="#about">About</a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <div class="status">
+                        <span></span>
+                        ENGINEERING CALCULATOR
+                    </div>
+
+                    <h1>
+                        Electrical Engineering
+                        <span>Made Simple.</span>
+                    </h1>
+
+                    <p>
+                        Calculate electrical quantities quickly and
+                        accurately with a collection of essential
+                        engineering calculators.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a href="#calculators"
+                           class="primary-btn">
+
+                            <i class="fa-solid fa-calculator"></i>
+
+                            Explore Calculators
+
+                        </a>
+
+                        <a href="#formulas"
+                           class="secondary-btn">
+
+                            <i class="fa-solid fa-book"></i>
+
+                            View Formulas
+
+                        </a>
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <strong>05</strong>
+                            <span>Calculators</span>
+                        </div>
+
+                        <div>
+                            <strong>SI</strong>
+                            <span>Units</span>
+                        </div>
+
+                        <div>
+                            <strong>100%</strong>
+                            <span>Responsive</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Circuit Illustration -->
+
+                <div class="circuit">
+
+                    <div class="circuit-card">
+
+                        <div class="circuit-header">
+
+                            <span>
+                                <i class="fa-solid fa-wave-square"></i>
+                                CIRCUIT MONITOR
+                            </span>
+
+                            <span class="live">
+                                ● LIVE
+                            </span>
+
+                        </div>
+
+                        <div class="circuit-display">
+
+                            <div class="voltage">
+                                <small>VOLTAGE</small>
+                                <strong>230.0 V</strong>
+                            </div>
+
+                            <div class="current">
+                                <small>CURRENT</small>
+                                <strong>5.24 A</strong>
+                            </div>
+
+                        </div>
+
+                        <div class="circuit-diagram">
+
+                            <span class="wire"></span>
+
+                            <span class="node"></span>
+
+                            <div class="resistor">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="node"></span>
+
+                            <span class="wire"></span>
+
+                        </div>
+
+                        <div class="power-display">
+
+                            <span>POWER</span>
+
+                            <strong>1205 W</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CALCULATORS ================= -->
+
+        <section class="calculators"
+                 id="calculators">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            <i class="fa-solid fa-microchip"></i>
+                            TOOLS
+                        </span>
+
+                        <h2>Engineering Calculators</h2>
+
+                        <p>
+                            Select a calculator to solve common
+                            electrical engineering problems.
+                        </p>
+
+                    </div>
+
+                    <div class="unit-badge">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                        SI UNITS
+                    </div>
+
+                </div>
+
+
+                <div class="calculator-grid">
+
+
+                    <!-- ================= OHM ================= -->
+
+                    <article class="calculator-card"
+                             data-calculator="ohm">
+
+                        <div class="card-top">
+
+                            <div class="card-icon purple">
+                                <i class="fa-solid fa-circle-nodes"></i>
+                            </div>
+
+                            <span class="card-number">01</span>
+
+                        </div>
+
+                        <h3>Ohm's Law</h3>
+
+                        <p>
+                            Calculate voltage, current or
+                            resistance using Ohm's Law.
+                        </p>
+
+                        <div class="formula">
+                            V = I × R
+                        </div>
+
+                        <div class="calculator-form">
+
+                            <select id="ohmType">
+
+                                <option value="voltage">
+                                    Calculate Voltage
+                                </option>
+
+                                <option value="current">
+                                    Calculate Current
+                                </option>
+
+                                <option value="resistance">
+                                    Calculate Resistance
+                                </option>
+
+                            </select>
+
+                            <div class="input-row">
+
+                                <div class="field">
+
+                                    <label>Current (A)</label>
+
+                                    <input type="number"
+                                           id="ohmCurrent"
+                                           placeholder="e.g. 5">
+
+                                </div>
+
+                                <div class="field">
+
+                                    <label>Resistance (Ω)</label>
+
+                                    <input type="number"
+                                           id="ohmResistance"
+                                           placeholder="e.g. 46">
+
+                                </div>
+
+                            </div>
+
+                            <button class="calculate-btn"
+                                    onclick="calculateOhm()">
+
+                                Calculate
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                            <div class="result"
+                                 id="ohmResult">
+
+                                Result will appear here
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ================= POWER ================= -->
+
+                    <article class="calculator-card"
+                             data-calculator="power">
+
+                        <div class="card-top">
+
+                            <div class="card-icon orange">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+
+                            <span class="card-number">02</span>
+
+                        </div>
+
+                        <h3>Electrical Power</h3>
+
+                        <p>
+                            Calculate electrical power using
+                            voltage and current.
+                        </p>
+
+                        <div class="formula">
+                            P = V × I
+                        </div>
+
+                        <div class="calculator-form">
+
+                            <div class="input-row">
+
+                                <div class="field">
+
+                                    <label>Voltage (V)</label>
+
+                                    <input type="number"
+                                           id="powerVoltage"
+                                           placeholder="e.g. 230">
+
+                                </div>
+
+                                <div class="field">
+
+                                    <label>Current (A)</label>
+
+                                    <input type="number"
+                                           id="powerCurrent"
+                                           placeholder="e.g. 5">
+
+                                </div>
+
+                            </div>
+
+                            <button class="calculate-btn"
+                                    onclick="calculatePower()">
+
+                                Calculate Power
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                            <div class="result"
+                                 id="powerResult">
+
+                                Result will appear here
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ================= RESISTANCE ================= -->
+
+                    <article class="calculator-card">
+
+                        <div class="card-top">
+
+                            <div class="card-icon cyan">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+
+                            <span class="card-number">03</span>
+
+                        </div>
+
+                        <h3>Resistance Network</h3>
+
+                        <p>
+                            Calculate equivalent resistance for
+                            series and parallel circuits.
+                        </p>
+
+                        <div class="formula">
+                            Series / Parallel
+                        </div>
+
+                        <div class="calculator-form">
+
+                            <select id="resistanceType">
+
+                                <option value="series">
+                                    Series
+                                </option>
+
+                                <option value="parallel">
+                                    Parallel
+                                </option>
+
+                            </select>
+
+                            <div class="field">
+
+                                <label>
+                                    Resistances (Ω)
+                                </label>
+
+                                <input type="text"
+                                       id="resistanceValues"
+                                       placeholder="10, 20, 30">
+
+                            </div>
+
+                            <button class="calculate-btn"
+                                    onclick="calculateResistance()">
+
+                                Calculate
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                            <div class="result"
+                                 id="resistanceResult">
+
+                                Result will appear here
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ================= AC POWER ================= -->
+
+                    <article class="calculator-card">
+
+                        <div class="card-top">
+
+                            <div class="card-icon blue">
+                                <i class="fa-solid fa-wave-square"></i>
+                            </div>
+
+                            <span class="card-number">04</span>
+
+                        </div>
+
+                        <h3>AC Power</h3>
+
+                        <p>
+                            Calculate apparent, real and reactive
+                            power in AC circuits.
+                        </p>
+
+                        <div class="formula">
+                            S = V × I
+                        </div>
+
+                        <div class="calculator-form">
+
+                            <div class="input-row">
+
+                                <div class="field">
+
+                                    <label>Voltage (V)</label>
+
+                                    <input type="number"
+                                           id="acVoltage"
+                                           placeholder="230">
+
+                                </div>
+
+                                <div class="field">
+
+                                    <label>Current (A)</label>
+
+                                    <input type="number"
+                                           id="acCurrent"
+                                           placeholder="5">
+
+                                </div>
+
+                            </div>
+
+                            <div class="field">
+
+                                <label>Power Factor</label>
+
+                                <input type="number"
+                                       id="powerFactor"
+                                       min="0"
+                                       max="1"
+                                       step="0.01"
+                                       placeholder="0.85">
+
+                            </div>
+
+                            <button class="calculate-btn"
+                                    onclick="calculateACPower()">
+
+                                Calculate
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                            <div class="result"
+                                 id="acResult">
+
+                                Result will appear here
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ================= TRANSFORMER ================= -->
+
+                    <article class="calculator-card">
+
+                        <div class="card-top">
+
+                            <div class="card-icon green">
+                                <i class="fa-solid fa-arrows-left-right"></i>
+                            </div>
+
+                            <span class="card-number">05</span>
+
+                        </div>
+
+                        <h3>Transformer</h3>
+
+                        <p>
+                            Calculate transformer voltage and
+                            turns ratio.
+                        </p>
+
+                        <div class="formula">
+                            V₂ / V₁ = N₂ / N₁
+                        </div>
+
+                        <div class="calculator-form">
+
+                            <div class="input-row">
+
+                                <div class="field">
+
+                                    <label>Primary V₁</label>
+
+                                    <input type="number"
+                                           id="primaryVoltage"
+                                           placeholder="230">
+
+                                </div>
+
+                                <div class="field">
+
+                                    <label>Primary Turns N₁</label>
+
+                                    <input type="number"
+                                           id="primaryTurns"
+                                           placeholder="1000">
+
+                                </div>
+
+                            </div>
+
+                            <div class="field">
+
+                                <label>Secondary Turns N₂</label>
+
+                                <input type="number"
+                                       id="secondaryTurns"
+                                       placeholder="500">
+
+                            </div>
+
+                            <button class="calculate-btn"
+                                    onclick="calculateTransformer()">
+
+                                Calculate
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+                            <div class="result"
+                                 id="transformerResult">
+
+                                Result will appear here
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FORMULAS ================= -->
+
+        <section class="formulas"
+                 id="formulas">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span class="eyebrow">
+                        <i class="fa-solid fa-book-open"></i>
+                        QUICK REFERENCE
+                    </span>
+
+                    <h2>Essential Electrical Formulas</h2>
+
+                    <p>
+                        Keep the fundamental electrical engineering
+                        equations close while solving problems.
+                    </p>
+
+                </div>
+
+
+                <div class="formula-grid">
+
+                    <div class="formula-box">
+
+                        <span>OHM'S LAW</span>
+
+                        <strong>V = I × R</strong>
+
+                        <small>
+                            Voltage = Current × Resistance
+                        </small>
+
+                    </div>
+
+                    <div class="formula-box">
+
+                        <span>POWER</span>
+
+                        <strong>P = V × I</strong>
+
+                        <small>
+                            Power = Voltage × Current
+                        </small>
+
+                    </div>
+
+                    <div class="formula-box">
+
+                        <span>ENERGY</span>
+
+                        <strong>E = P × t</strong>
+
+                        <small>
+                            Energy = Power × Time
+                        </small>
+
+                    </div>
+
+                    <div class="formula-box">
+
+                        <span>AC POWER</span>
+
+                        <strong>P = VI cosφ</strong>
+
+                        <small>
+                            Real Power in AC circuit
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about"
+                 id="about">
+
+            <div class="container">
+
+                <div class="about-box">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            BUILT FOR STUDENTS
+                        </span>
+
+                        <h2>
+                            Learn the calculation.
+                            Understand the circuit.
+                        </h2>
+
+                        <p>
+                            ElectroCalc is designed as an educational
+                            toolkit for electrical engineering students.
+                            Use the calculators to verify your calculations
+                            and understand the formulas behind them.
+                        </p>
+
+                    </div>
+
+                    <div class="terminal">
+
+                        <div class="terminal-top">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+                        <code>
+                            <span class="green-text">
+                                &gt; electrocalc
+                            </span>
+                            <br>
+                            <span class="blue-text">
+                                SYSTEM:
+                            </span>
+                            Ready
+                            <br>
+                            <span class="blue-text">
+                                TOOLS:
+                            </span>
+                            05 loaded
+                            <br>
+                            <span class="blue-text">
+                                UNITS:
+                            </span>
+                            SI
+                            <br>
+                            <span class="green-text">
+                                &gt; calculate()
+                            </span>
+                            _
+                        </code>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-content">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <div>
+                    <strong>Electro<span>Calc</span></strong>
+                    <small>ENGINEERING TOOLS</small>
+                </div>
+
+            </div>
+
+            <p>
+                Built for electrical engineering students.
+            </p>
+
+            <p>
+                © 2026 ElectroCalc
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
